@@ -1,0 +1,36 @@
+.btn-group .btn a {
+    color: inherit; /* Наследует цвет кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для группы кнопок */
+.btn-group {
+    display: flex;
+    gap: 10px; /* Небольшое расстояние между кнопками */
+    align-items: center; /* Центрируем кнопки по вертикали */
+}
+
+/* Стили для кнопок, чтобы они были одинаковыми */
+.btn-group .btn {
+    flex: 1; /* Обеспечивает одинаковую ширину кнопок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.btn-group .btn-outline-primary {
+    border: 2px solid #007bff; /* Граница кнопки */
+    color: #007bff; /* Цвет текста кнопки */
+}
+
+.btn-group .btn-danger {
+    border: 2px solid #dc3545; /* Граница кнопки выхода */
+    color: #dc3545; /* Цвет текста кнопки */
+}
+
+/* Стили для состояния при наведении */
+.btn-group .btn:hover {
+    opacity: 0.9; /* Немного уменьшаем прозрачность при наведении */
+}
